@@ -1,0 +1,70 @@
+[project]
+name = "p3-1-information-geometry"
+version = "0.57.0"
+description = "Reproducibility code for Dean (2026), 'Information Geometry of Market Dynamics: A Pareto Frontier from Contact Geometry'"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Bruce H. Dean", email = "symplectic.research@gmail.com" }
+]
+keywords = [
+    "information-geometry",
+    "fisher-metric",
+    "contact-geometry",
+    "stochastic-thermodynamics",
+    "fluctuation-dissipation",
+    "pareto-frontier",
+    "stochastic-damped-harmonic-oscillator",
+    "econophysics",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Scientific/Engineering :: Mathematics",
+]
+
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "scipy>=1.11",
+    "matplotlib>=3.7",
+    "yfinance>=0.2.40",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "ruff>=0.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/bruce3141/Information-Geometry-Market-Dynamics"
+Paper = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=PENDING"
+Repository = "https://github.com/bruce3141/Information-Geometry-Market-Dynamics"
+
+[project.scripts]
+p3_1_falsification = "p3_1.falsification_test:main"
+p3_1_pareto_verify = "p3_1.pareto_bound_verification:main"
+p3_1_sharpe = "p3_1.sharpe_optimization:main"
+p3_1_consistency = "p3_1.consistency_tests:main"
+p3_1_figures = "p3_1.figures:main"
+p3_1_figure3 = "p3_1.figure3:main"
+p3_1_underdamped = "p3_1.underdamped_test:main"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
