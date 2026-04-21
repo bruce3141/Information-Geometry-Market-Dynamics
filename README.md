@@ -1,10 +1,12 @@
 # Information Geometry of Market Dynamics
 
+[![DOI](https://zenodo.org/badge/1211780286.svg)](https://doi.org/10.5281/zenodo.19681936)
+
 Reproducibility code for:
 
 > Dean, B.H. (2026). *Information Geometry of Market Dynamics: A Pareto Frontier from Contact Geometry.*
 
-Working draft and pre-built PDF: `paper/p3_1_v60.md` and `paper/p3_1_v60.pdf`.
+Working draft and pre-built PDF: `paper/p3_1_v61.md` and `paper/p3_1_v61.pdf`.
 
 This repository regenerates all results in the paper that are not directly imported from companion papers [1] and [2]: the seventeen-market cross-market validation (Appendix B, Tables B1 and B2), the four-way stationary-SDHO consistency battery (Appendix B §B.5, Table B3), the phase-plane flow alignment for SPY (Appendix B §B.6, Figure 3), the §6.2 underdamped-regime candidate sweep (including the KSE-100 critical-point result), the four numerical verifications of the Pareto frontier theorem (Appendix C), the §4.2-footnote Sharpe-optimization demonstration, and all paper figures.
 
@@ -69,8 +71,8 @@ src/p3_1/
   sharpe_optimization.py         Section 4.2 footnote, economic-attractor demonstration
   figures.py                     Paper Figures 1 and 2, both themes
 paper/
-  p3_1_v60.md                    Working draft (Markdown)
-  p3_1_v60.pdf                   Pre-built PDF
+  p3_1_v61.md                    Working draft (Markdown)
+  p3_1_v61.pdf                   Pre-built PDF
   Figure*.png                    Light-theme figures (embedded in the PDF)
 figures/                         Dark-theme + light-theme duplicates
 scripts/
@@ -85,12 +87,27 @@ MIT. See `LICENSE`.
 
 ## Citation
 
+To cite the paper:
+
 ```bibtex
 @article{Dean2026P3-1,
   author  = {Dean, Bruce H.},
   title   = {Information Geometry of Market Dynamics: A Pareto Frontier from Contact Geometry},
   journal = {Working paper},
   year    = {2026}
+}
+```
+
+To cite this reproducibility archive:
+
+```bibtex
+@software{Dean2026P3-1-code,
+  author    = {Dean, Bruce H.},
+  title     = {Information Geometry of Market Dynamics: A Pareto Frontier from Contact Geometry (reproducibility code)},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.19681936},
+  url       = {https://doi.org/10.5281/zenodo.19681936}
 }
 ```
 

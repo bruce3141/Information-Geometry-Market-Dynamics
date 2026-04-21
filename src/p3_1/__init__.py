@@ -12,4 +12,4 @@ Modules:
   sharpe_optimization       - §4.2 footnote, Sharpe-vs-R^2 attractor demo
   figures                   - All paper figures (1a, 1b, 2)
 """
-__version__ = "0.60.0"
+__version__ = "0.61.0"
