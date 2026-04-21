@@ -1,0 +1,43 @@
+{
+  "title": "Information Geometry of Market Dynamics: A Pareto Frontier from Contact Geometry",
+  "upload_type": "software",
+  "description": "Reproducibility code for Dean (2026), 'Information Geometry of Market Dynamics: A Pareto Frontier from Contact Geometry'. The paper derives a closed-form algebraic identity, R^2_exact(k, Omega), between the deterministic variance fraction of momentum-acceleration dynamics and the contact-geometric dissipation rate of a stochastic damped harmonic oscillator, with leading-order form R^2 = Omega^2 / (1 + Omega^2). This repository reproduces the seventeen-market cross-market validation (covering Asian, European, emerging-market, and cryptocurrency instruments), the four-way stationary-SDHO consistency battery, the phase-plane flow alignment for SPY, the underdamped-regime candidate sweep (including the Pakistan KSE-100 critical-point result), four numerical verifications of the Pareto frontier theorem, the Sharpe-optimization footnote demonstration, and all paper figures, end-to-end in about three to four minutes on a standard laptop. Code is in Python (NumPy, Pandas, SciPy, Matplotlib, yfinance), with daily price data downloaded at runtime from Yahoo Finance via yfinance.",
+  "creators": [
+    {
+      "name": "Dean, Bruce H.",
+      "affiliation": "NASA Goddard Space Flight Center",
+      "orcid": "0009-0008-8153-3269"
+    }
+  ],
+  "keywords": [
+    "information geometry",
+    "Fisher metric",
+    "statistical manifold",
+    "contact geometry",
+    "Pareto frontier",
+    "stochastic damped harmonic oscillator",
+    "fluctuation-dissipation theorem",
+    "stochastic thermodynamics",
+    "entropy production",
+    "Cencov's theorem",
+    "econophysics",
+    "market dynamics",
+    "Lyapunov equation",
+    "SINDy"
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "identifier": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5990674",
+      "relation": "cites",
+      "resource_type": "publication-workingpaper"
+    },
+    {
+      "identifier": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6380118",
+      "relation": "cites",
+      "resource_type": "publication-workingpaper"
+    }
+  ],
+  "notes": "The six futures markets in the paper's Table 1 are imported from the first companion paper (Dean, SSRN 5990674); the underlying Databento price data are not redistributed. All other empirical results are regenerated end-to-end from freely available Yahoo Finance data via the scripts/reproduce_all.sh entry point."
+}
